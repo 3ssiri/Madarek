@@ -3,155 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>محول مدارك (Madarek) | استخراج المعرفة النقية</title>
+    <title>مدارك — منصّة عربية لفهم المستندات وتحويلها إلى معرفة</title>
+    <meta name="description" content="مدارك يقرأ مستنداتك العربية الممسوحة، يُصلح تشوّهات الحرف العربي، ويحوّل أرشيفك إلى مكتبة معرفية تُسأل بلغتك — بخصوصية تامّة داخل بيئتك.">
+    <meta property="og:title" content="مدارك — حيث يستعيد النصّ العربي هيئته">
+    <meta property="og:description" content="منصّة عربية لفهم المستندات: قراءة بصرية، إصلاح للنص، وبحث دلالي بالمعنى.">
+    <meta name="theme-color" content="#1d1a14">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231d1a14'/%3E%3Cpath d='M32 13 51 32 32 51 13 32Z' fill='%23b08a3e'/%3E%3Cpath d='M32 23 41 32 32 41 23 32Z' fill='%23f7f2e9'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
-    <!-- Background Animation -->
-    <div class="background-effects">
-        <div class="glass-orb blue-orb"></div>
-        <div class="glass-orb purple-orb"></div>
-    </div>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">
-            <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
-            مدارك <span class="pro-badge">PRO</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#features">المميزات</a></li>
-            <li><a href="#contact">تواصل معنا</a></li>
-        </ul>
-        <a href="#download" class="cta-nav-btn"><i class="fa-solid fa-download"></i> حمل الآن</a>
-    </nav>
+    <a class="skip-link" href="#main">تجاوز إلى المحتوى</a>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">
-                حول فوضى المستندات إلى <br/>
-                <span class="gradient-text">معرفة رقمية صافية</span>
-            </h1>
-            <p class="hero-subtitle">
-                أحدث تقنيات المعالجة المحلية لتحويل ملفات (PDF, Word, الصور) المعقدة 
-                إلى نصوص رقمية جاهزة لمشاريع الذكاء الاصطناعي بدقة استثنائية،
-                وفصل الجداول الذكي في ثوانٍ.
-            </p>
-            <div class="hero-buttons">
-                <a href="#download" class="btn primary-btn pulse-glow">
-                    تنزيل الإصدار لأجهزة Windows <i class="fa-brands fa-windows"></i>
-                </a>
-                <a href="#features" class="btn secondary-btn">اكتشف كيف يعمل</a>
-            </div>
-            
-            <div class="stats">
-                <div class="stat-item"><i class="fa-solid fa-bolt"></i> استخراج فوري</div>
-                <div class="stat-item"><i class="fa-solid fa-shield-halved"></i> 100% بدون إنترنت</div>
-                <div class="stat-item"><i class="fa-solid fa-file-export"></i> صيغ متعددة</div>
-            </div>
-        </div>
-        <div class="hero-image-wrapper">
-            <!-- Embedding the specific hero image requested -->
-            <img src="C:/Users/عليبنعسيري/.gemini/antigravity/brain/51059c6c-b92d-4b8c-bb92-cda9c2e07644/madarek_landing_hero_1774314284750.png" alt="Madarek AI Technology" class="hero-image floating-animation">
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features-section">
-        <h2 class="section-heading">قدرات غير مسبوقة لمحرك <span class="gradient-text">مدارك</span></h2>
-        
-        <div class="features-grid">
-            <!-- Feature 1 -->
-            <div class="feature-card glass-panel">
-                <div class="icon-box blue-box"><i class="fa-solid fa-language"></i></div>
-                <h3>هندسة عكسية للنصوص المعقدة</h3>
-                <p>تجاوز مشكلة الحروف المقطوعة والمنعكسة في المقررات، النظام مصمم بأحدث الخوارزميات لقراءة وهيكلة المحتوى بشكل آلي ومنظم دون القلق حول ترتيب الكلمات.</p>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="feature-card glass-panel">
-                <div class="icon-box purple-box"><i class="fa-solid fa-database"></i></div>
-                <h3>تصدير بصيغ برمجية ومكتبيّة</h3>
-                <p>لا تتوقف عند النصوص العادية (TXT)! احصل على ملفك كقاعدة بيانات جاهزة (JSON, XML)، أو كصفحة ويب (HTML)، أو كمستند ماركداون نظيف (MD).</p>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="feature-card glass-panel">
-                <div class="icon-box green-box"><i class="fa-solid fa-table"></i></div>
-                <h3>صيد الجداول الحصري (CSV)</h3>
-                <p>إذا احتوى ملفك على مئات الصفحات، يستطيع "مدارك" اصطياد الجداول فقط وتصديرها لك كملفات إكسيل نقية، بضغطة زر وبدون تشويش.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call To Action & Download -->
-    <section id="download" class="download-section">
-        <div class="glass-panel download-box">
-            <h2>ابدأ تحويل ملفاتك الآن بخصوصية تامة!</h2>
-            <p>لا داعي لرفع بياناتك الخاصة على خوادم السحابة. حمّل تطبيق مدارك المكتبي الصغير، واجعله يعمل كخلية نحل على جهازك مباشرةً دون لمس شبكة الإنترنت أبداً.</p>
-            <a href="#" class="btn primary-btn large-btn pulse-glow">
-                <i class="fa-solid fa-cloud-arrow-down"></i> تحميل أداة مدارك مجاناً
+    <!-- ـــــــــ Header ـــــــــ -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#top" class="brand" aria-label="مدارك — الصفحة الرئيسية">
+                <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+                    <path d="M16 2 30 16 16 30 2 16Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M16 9.5 22.5 16 16 22.5 9.5 16Z" fill="currentColor"/>
+                </svg>
+                <span class="brand-name">مدارك</span>
             </a>
-            <p class="version-info">الإصدار: 1.0 التجريبي | التوافق: ويندوز 10 وفوق</p>
+            <nav class="site-nav" aria-label="التنقل الرئيسي">
+                <a href="#capabilities">القدرات</a>
+                <a href="#method">كيف يعمل</a>
+                <a href="#ecosystem">المنظومة</a>
+                <a href="#contact">تواصل</a>
+            </nav>
+            <a href="#contact" class="btn btn-ink header-cta">اطلب وصولاً مبكراً</a>
         </div>
-    </section>
+    </header>
 
-    <!-- Contact & Feedback Section -->
-    <section id="contact" class="contact-section">
-        <div class="contact-container">
-            <div class="contact-info">
-                <h2>تواصل مع المطور</h2>
-                <p>نعمل بشغف في تطوير "مدارك" لتكون الأداة الأولى عربياً في هيكلة البيانات. يسعدنا جداً استقبال الدعم، الاقتراحات، والتبليغ عن الأعطال لرفع جودة المحرك.</p>
-                <div class="dev-card">
-                    <img src="https://ui-avatars.com/api/?name=Ali+Assiri&background=3b82f6&color=fff&size=80" alt="Ali Assiri" class="dev-avatar">
-                    <div class="dev-details">
-                        <h4>المبرمج والمطور: علي عسيري</h4>
-                        <p><i class="fa-solid fa-envelope"></i> assiri@gmail.com</p>
+    <main id="main">
+
+        <!-- ـــــــــ Hero ـــــــــ -->
+        <section id="top" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="kicker">منصّة عربية لفهم المستندات</p>
+                    <h1 class="display">
+                        نُعيد للنصّ العربي هيئته،<br>
+                        <em>ونحوّله إلى معرفةٍ حيّة.</em>
+                    </h1>
+                    <p class="lede">
+                        يقرأ «مدارك» ملفات PDF والصور الممسوحة بعينٍ مدرَّبة على العربية،
+                        يُقوِّم ما أصاب الحرف من تقطيعٍ وانعكاس، ثم يبني من مستنداتك
+                        مكتبةً تُسأل بالمعنى فتُجيب من قلب صفحاتك — دون أن تغادر
+                        بياناتك بيئتك الخاصّة.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-ink">اطلب وصولاً مبكراً</a>
+                        <a href="#capabilities" class="btn-line">تعرّف على القدرات</a>
+                    </div>
+                </div>
+
+                <!-- Before / after specimen — the product in one glance -->
+                <figure class="specimen reveal" aria-label="عينة: نص قبل المعالجة وبعدها">
+                    <div class="doc doc-before">
+                        <div class="doc-bar"><span>النصّ كما يصل</span><span class="doc-flag">مُشوَّه</span></div>
+                        <p class="doc-text broken" aria-hidden="true">ًايئوض حوسمم فلم نم صَّنلا اذه جرُختسا</p>
+                        <p class="doc-text broken" aria-hidden="true">ةسوكعم فورحلاو ،ةرثعبم تاملكلا ودبتف</p>
+                    </div>
+                    <div class="specimen-divider" aria-hidden="true">
+                        <span class="divider-line"></span>
+                        <span class="divider-label">محرّك مدارك</span>
+                        <span class="divider-line"></span>
+                    </div>
+                    <div class="doc doc-after">
+                        <span class="doc-stamp" aria-hidden="true">مُقوَّم</span>
+                        <div class="doc-bar"><span>النصّ بعد مدارك</span><span class="doc-flag ok">سليم</span></div>
+                        <p class="doc-text">استُخرج هذا النصّ من ملفٍ ممسوحٍ ضوئياً</p>
+                        <p class="doc-text">فتعود الكلمات إلى نسقها، والحروف إلى وصلها</p>
+                        <div class="doc-tags">
+                            <span>عنوان</span><span>فقرة</span><span>جدول</span>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ـــــــــ Credo strip ـــــــــ -->
+        <div class="credo" role="presentation">
+            <div class="container credo-items">
+                <span>معالجة داخل بيئتك بالكامل</span>
+                <span>إصلاح تشوّهات الحرف العربي</span>
+                <span>بحثٌ بالمعنى لا بالكلمات</span>
+                <span>تكامل برمجي مفتوح</span>
+                <span>تدقيق للبيانات الحسّاسة</span>
+            </div>
+        </div>
+
+        <!-- ـــــــــ Capabilities ـــــــــ -->
+        <section id="capabilities" class="section">
+            <div class="container">
+                <header class="section-head reveal">
+                    <span class="section-no">٠١</span>
+                    <h2 class="display">القدرات</h2>
+                    <p>ستّ ركائز يقوم عليها المحرّك، من أوّل صفحة ممسوحة إلى آخر سؤال تطرحه.</p>
+                </header>
+
+                <div class="cap-grid">
+                    <article class="cap reveal">
+                        <span class="cap-no">٠١</span>
+                        <h3>قراءة بصرية مدرَّبة على العربية</h3>
+                        <p>يقرأ الصفحات الممسوحة والصور منخفضة الجودة بتقنيات رؤية حاسوبية تعمل محلياً، فلا تُرسل صفحة واحدة خارج بيئتك.</p>
+                    </article>
+                    <article class="cap reveal">
+                        <span class="cap-no">٠٢</span>
+                        <h3>تقويم الحرف العربي</h3>
+                        <p>يعالج الحروف المقطّعة والمنعكسة والكلمات المبعثرة التي يخلّفها سوء الاستخراج، ليخرج النصّ سليماً كما كُتب أوّل مرّة.</p>
+                    </article>
+                    <article class="cap reveal">
+                        <span class="cap-no">٠٣</span>
+                        <h3>بحثٌ دلاليّ بالمعنى</h3>
+                        <p>يتحوّل كلّ مستند إلى معرفة مفهرسة تُسأل بالمعنى لا بمطابقة الكلمات، فتجد ضالّتك وإن اختلفت الصياغة.</p>
+                    </article>
+                    <article class="cap reveal">
+                        <span class="cap-no">٠٤</span>
+                        <h3>جاهزٌ لمساعدات الذكاء الاصطناعي</h3>
+                        <p>يتكامل مع وكلاء الذكاء الاصطناعي عبر بروتوكولات قياسية مفتوحة، فتغدو مكتبتك مرجعاً يستند إليه مساعدك الرقمي.</p>
+                    </article>
+                    <article class="cap reveal">
+                        <span class="cap-no">٠٥</span>
+                        <h3>خصوصية بالتصميم</h3>
+                        <p>المعالجة كلّها تجري داخل بنيتك، تسندها طبقة تدقيق تكشف البيانات الحسّاسة قبل أن تستقرّ في قاعدة معرفتك.</p>
+                    </article>
+                    <article class="cap reveal">
+                        <span class="cap-no">٠٦</span>
+                        <h3>أتمتة وتصدير بلا حدود</h3>
+                        <p>واجهة برمجية لربط أنظمتك ومعالجة الملفات على نطاق واسع، وصيغ إخراج نظيفة جاهزة للنشر والأرشفة وإعادة الاستخدام.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ـــــــــ Method ـــــــــ -->
+        <section id="method" class="section section-alt">
+            <div class="container">
+                <header class="section-head reveal">
+                    <span class="section-no">٠٢</span>
+                    <h2 class="display">كيف يعمل</h2>
+                    <p>رحلة المستند من ملفٍ مبعثر إلى معرفةٍ تُجيب، في خمس محطّات.</p>
+                </header>
+
+                <ol class="steps">
+                    <li class="step reveal">
+                        <span class="step-no">١</span>
+                        <h3>الاستلام</h3>
+                        <p>يصل المستند عبر الويب أو الواجهة البرمجية أو أدوات التدوين.</p>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step-no">٢</span>
+                        <h3>القراءة</h3>
+                        <p>عينٌ بصرية تختار الأسلوب الأنسب لفكّ محتوى كلّ صفحة.</p>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step-no">٣</span>
+                        <h3>التقويم</h3>
+                        <p>يُصلَح النصّ ويُهيكل ويتحوّل إلى صياغة نظيفة منسّقة.</p>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step-no">٤</span>
+                        <h3>الفهرسة</h3>
+                        <p>تُفهرس المعاني وتستقرّ في قاعدة معرفة قابلة للبحث.</p>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step-no">٥</span>
+                        <h3>الاستثمار</h3>
+                        <p>تسأل، تبحث، وتربط معرفتك بأدواتك ومساعداتك الذكية.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ـــــــــ Ecosystem ـــــــــ -->
+        <section id="ecosystem" class="section">
+            <div class="container">
+                <header class="section-head reveal">
+                    <span class="section-no">٠٣</span>
+                    <h2 class="display">المنظومة</h2>
+                    <p>مدخلٌ لكلّ سيناريو: للقارئ الفرد، وللباحث، وللمؤسسة، وللمطوّر.</p>
+                </header>
+
+                <div class="eco-grid reveal">
+                    <div class="eco-cell">
+                        <h3>واجهة الويب</h3>
+                        <p>لوحة عمل حديثة لرفع الملفات ومتابعة المعالجة والبحث في معرفتك.</p>
+                    </div>
+                    <div class="eco-cell">
+                        <h3>الواجهة البرمجية</h3>
+                        <p>‏API آمنة بمفاتيح وصول، تعالج دفعات كبيرة دون انتظار.</p>
+                    </div>
+                    <div class="eco-cell">
+                        <h3>وكلاء الذكاء الاصطناعي</h3>
+                        <p>اتصال مباشر بمساعدات الذكاء عبر بروتوكولات مفتوحة قياسية.</p>
+                    </div>
+                    <div class="eco-cell">
+                        <h3>إضافة Obsidian</h3>
+                        <p>مستنداتك تدخل قبو ملاحظاتك مباشرةً كصفحات منسّقة مترابطة.</p>
+                    </div>
+                    <div class="eco-cell">
+                        <h3>محرّك عربيّ متخصّص</h3>
+                        <p>نواة لغوية بُنيت خصيصاً لفهم العربية وعلاج عللها لا كترجمة لحلّ أجنبي.</p>
+                    </div>
+                    <div class="eco-cell">
+                        <h3>الوحدة التعليمية</h3>
+                        <p>تحوّل المقرّرات والمستندات التعليمية إلى محتوى منظّم قابل للاستذكار.</p>
                     </div>
                 </div>
             </div>
-            
-            <form class="contact-form glass-panel" onsubmit="event.preventDefault(); alert('شكراً لرسالتك! سيتم ربطها بريدياً في التحديث القادم.');">
-                <h3>أرسل ملاحظاتك</h3>
-                <div class="form-group">
-                    <input type="text" placeholder="الاسم الكريم" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="البريد الإلكتروني" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="اكتب ملاحظتك التقييمية أو استفسارك هنا..." rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn primary-btn w-100"><i class="fa-solid fa-paper-plane"></i> إرسال الرسالة</button>
-            </form>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>جميع حقوق الخوارزميات وصيانة التراكيب العربية في محرك مدارك محفوظة للأساس المطور © 2026</p>
-            <p style="font-size: 0.8rem; margin-top: 8px; color: #64748b; line-height: 1.5; max-width: 600px; margin-left: auto; margin-right: auto;">
-                <strong>إقرار التراخيص المفتوحة:</strong> يستخدم هذا التطبيق نواة الاستخراج الأساسية (MarkItDown) المطورة والمملوكة لشركة مايكروسوفت بموجب رخصة برمجيات (MIT License) الحرة للإطارات المفتوحة المضمنة.
-            </p>
+        <!-- ـــــــــ CTA band ـــــــــ -->
+        <section class="cta-band">
+            <div class="container cta-inner reveal">
+                <h2 class="display">مكتبتك تستحقّ أن تُفهَم.</h2>
+                <p>ابدأ ببناء قاعدة معرفتك العربية اليوم — تعمل المنصّة داخل بيئتك الخاصّة، ولا تغادر مستنداتك حدودها.</p>
+                <a href="#contact" class="btn btn-paper">اطلب الوصول المبكر</a>
+                <p class="cta-note">الإصدار الثاني · وصول مبكر</p>
+            </div>
+        </section>
+
+        <!-- ـــــــــ Contact ـــــــــ -->
+        <section id="contact" class="section">
+            <div class="container contact-grid">
+                <div class="contact-copy reveal">
+                    <header class="section-head">
+                        <span class="section-no">٠٤</span>
+                        <h2 class="display">تواصل</h2>
+                        <p>
+                            يُبنى «مدارك» ليكون المرجع العربي الأوّل في فهم المستندات
+                            وهيكلة المعرفة. يسعدنا استقبال طلبات الوصول المبكر،
+                            والاقتراحات، وملاحظات الاستخدام.
+                        </p>
+                    </header>
+                    <div class="dev-card">
+                        <span class="dev-monogram" aria-hidden="true">ع</span>
+                        <div class="dev-details">
+                            <h3>علي عسيري</h3>
+                            <p>المبرمج والمطوّر</p>
+                            <a href="mailto:assiri@gmail.com" class="dev-mail">assiri@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" onsubmit="event.preventDefault(); alert('وصلت رسالتك، شكراً لك. سنعود إليك قريباً.'); this.reset();">
+                    <h3>أرسل ملاحظتك أو اطلب الوصول المبكر</h3>
+                    <div class="field">
+                        <label for="f-name">الاسم الكريم</label>
+                        <input id="f-name" type="text" name="name" autocomplete="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="f-mail">البريد الإلكتروني</label>
+                        <input id="f-mail" type="email" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="f-msg">رسالتك</label>
+                        <textarea id="f-msg" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-ink btn-block">إرسال</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ـــــــــ Footer ـــــــــ -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© ٢٠٢٦ مدارك — جميع حقوق الخوارزميات وصيانة التراكيب العربية محفوظة.</p>
+            <p class="footer-note">تُبنى المنصّة فوق مكوّنات مفتوحة المصدر، ويُحفَظ لكلٍّ منها ترخيصه وحقوق أصحابه.</p>
         </div>
     </footer>
 
     <script>
-        // Smooth Scrolling setup
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+        // Scroll-triggered reveal — disabled when the user prefers reduced motion
+        (function () {
+            var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            var items = document.querySelectorAll('.reveal');
+            if (reduced || !('IntersectionObserver' in window)) {
+                items.forEach(function (el) { el.classList.add('in-view'); });
+                return;
+            }
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        io.unobserve(entry.target);
+                    }
                 });
-            });
-        });
+            }, { threshold: 0.15 });
+            items.forEach(function (el) { io.observe(el); });
+        })();
+
+        // Hairline shadow under the header once the page scrolls
+        (function () {
+            var header = document.querySelector('.site-header');
+            var onScroll = function () {
+                header.classList.toggle('is-scrolled', window.scrollY > 8);
+            };
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+        })();
     </script>
 </body>
 </html>
