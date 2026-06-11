@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>محول مدارك (Madarek) | استخراج المعرفة النقية</title>
+    <title>منصة مدارك (Madarek 2.0) | الذكاء الاصطناعي لفهم المستندات العربية</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+
     <!-- Background Animation -->
     <div class="background-effects">
         <div class="glass-orb blue-orb"></div>
@@ -20,84 +20,196 @@
     <nav class="navbar">
         <div class="logo">
             <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
-            مدارك <span class="pro-badge">PRO</span>
+            مدارك <span class="pro-badge">2.0</span>
         </div>
         <ul class="nav-links">
             <li><a href="#home">الرئيسية</a></li>
             <li><a href="#features">المميزات</a></li>
+            <li><a href="#pipeline">كيف يعمل</a></li>
+            <li><a href="#integrations">المنظومة</a></li>
             <li><a href="#contact">تواصل معنا</a></li>
         </ul>
-        <a href="#download" class="cta-nav-btn"><i class="fa-solid fa-download"></i> حمل الآن</a>
+        <a href="#start" class="cta-nav-btn"><i class="fa-solid fa-rocket"></i> ابدأ الآن</a>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1 class="hero-title">
-                حول فوضى المستندات إلى <br/>
-                <span class="gradient-text">معرفة رقمية صافية</span>
+                منصة الذكاء الاصطناعي <br/>
+                <span class="gradient-text">لفهم المستندات العربية</span>
             </h1>
             <p class="hero-subtitle">
-                أحدث تقنيات المعالجة المحلية لتحويل ملفات (PDF, Word, الصور) المعقدة 
-                إلى نصوص رقمية جاهزة لمشاريع الذكاء الاصطناعي بدقة استثنائية،
-                وفصل الجداول الذكي في ثوانٍ.
+                "مدارك 2.0" يتجاوز التحويل التقليدي: قراءة بصرية لملفات PDF والصور
+                بنماذج رؤية محلية، إصلاح آلي للنصوص العربية المشوهة، فهرسة دلالية
+                وبحث ذكي (RAG)، وواجهات API و MCP جاهزة لوكلاء الذكاء الاصطناعي —
+                كل ذلك يعمل على بنيتك الخاصة بخصوصية تامة.
             </p>
             <div class="hero-buttons">
-                <a href="#download" class="btn primary-btn pulse-glow">
-                    تنزيل الإصدار لأجهزة Windows <i class="fa-brands fa-windows"></i>
+                <a href="#start" class="btn primary-btn pulse-glow">
+                    ابدأ مع منصة مدارك <i class="fa-solid fa-arrow-left"></i>
                 </a>
-                <a href="#features" class="btn secondary-btn">اكتشف كيف يعمل</a>
+                <a href="#integrations" class="btn secondary-btn"><i class="fa-solid fa-code"></i> للمطورين: API & MCP</a>
             </div>
-            
+
             <div class="stats">
-                <div class="stat-item"><i class="fa-solid fa-bolt"></i> استخراج فوري</div>
-                <div class="stat-item"><i class="fa-solid fa-shield-halved"></i> 100% بدون إنترنت</div>
-                <div class="stat-item"><i class="fa-solid fa-file-export"></i> صيغ متعددة</div>
+                <div class="stat-item"><i class="fa-solid fa-eye"></i> رؤية حاسوبية محلية</div>
+                <div class="stat-item"><i class="fa-solid fa-shield-halved"></i> بياناتك لا تغادر بنيتك</div>
+                <div class="stat-item"><i class="fa-solid fa-robot"></i> جاهز لوكلاء الذكاء (MCP)</div>
             </div>
         </div>
         <div class="hero-image-wrapper">
-            <!-- Embedding the specific hero image requested -->
-            <img src="C:/Users/عليبنعسيري/.gemini/antigravity/brain/51059c6c-b92d-4b8c-bb92-cda9c2e07644/madarek_landing_hero_1774314284750.png" alt="Madarek AI Technology" class="hero-image floating-animation">
+            <!-- Self-contained pipeline visual (no external assets) -->
+            <div class="hero-visual glass-panel floating-animation" aria-hidden="true">
+                <div class="visual-header">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    <span class="visual-title">Madarek Engine 2.0</span>
+                </div>
+                <div class="visual-row"><i class="fa-solid fa-file-pdf"></i> استلام المستند <span class="row-status ok">تم</span></div>
+                <div class="visual-row"><i class="fa-solid fa-eye"></i> قراءة بصرية (Vision OCR) <span class="row-status ok">تم</span></div>
+                <div class="visual-row"><i class="fa-solid fa-wand-magic-sparkles"></i> إصلاح النص العربي <span class="row-status ok">تم</span></div>
+                <div class="visual-row"><i class="fa-solid fa-diagram-project"></i> تضمين وفهرسة دلالية <span class="row-status ok">تم</span></div>
+                <div class="visual-row active"><i class="fa-solid fa-magnifying-glass-chart"></i> معرفة قابلة للبحث <span class="row-status live">جاهز</span></div>
+            </div>
         </div>
     </section>
 
     <!-- Features Section -->
     <section id="features" class="features-section">
-        <h2 class="section-heading">قدرات غير مسبوقة لمحرك <span class="gradient-text">مدارك</span></h2>
-        
+        <h2 class="section-heading">قدرات الجيل الثاني من محرك <span class="gradient-text">مدارك</span></h2>
+
         <div class="features-grid">
             <!-- Feature 1 -->
             <div class="feature-card glass-panel">
-                <div class="icon-box blue-box"><i class="fa-solid fa-language"></i></div>
-                <h3>هندسة عكسية للنصوص المعقدة</h3>
-                <p>تجاوز مشكلة الحروف المقطوعة والمنعكسة في المقررات، النظام مصمم بأحدث الخوارزميات لقراءة وهيكلة المحتوى بشكل آلي ومنظم دون القلق حول ترتيب الكلمات.</p>
+                <div class="icon-box blue-box"><i class="fa-solid fa-eye"></i></div>
+                <h3>قراءة بصرية بنماذج رؤية عربية</h3>
+                <p>موجّه رؤية ذكي (Vision Router) يقرأ الصفحات الممسوحة والصور المعقدة عبر نماذج رؤية محلية (Baseer / Qwen) تعمل دون الحاجة لخدمات سحابية خارجية.</p>
             </div>
 
             <!-- Feature 2 -->
             <div class="feature-card glass-panel">
-                <div class="icon-box purple-box"><i class="fa-solid fa-database"></i></div>
-                <h3>تصدير بصيغ برمجية ومكتبيّة</h3>
-                <p>لا تتوقف عند النصوص العادية (TXT)! احصل على ملفك كقاعدة بيانات جاهزة (JSON, XML)، أو كصفحة ويب (HTML)، أو كمستند ماركداون نظيف (MD).</p>
+                <div class="icon-box purple-box"><i class="fa-solid fa-language"></i></div>
+                <h3>إصلاح النصوص العربية المشوهة</h3>
+                <p>معالجة الحروف المقطوعة والمنعكسة وترتيب الكلمات المعكوس الناتج عن سوء استخراج PDF — المشكلة التي وُلد "مدارك" أساساً لحلها، الآن بمحرك أنضج وأدق.</p>
             </div>
 
             <!-- Feature 3 -->
             <div class="feature-card glass-panel">
-                <div class="icon-box green-box"><i class="fa-solid fa-table"></i></div>
-                <h3>صيد الجداول الحصري (CSV)</h3>
-                <p>إذا احتوى ملفك على مئات الصفحات، يستطيع "مدارك" اصطياد الجداول فقط وتصديرها لك كملفات إكسيل نقية، بضغطة زر وبدون تشويش.</p>
+                <div class="icon-box green-box"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                <h3>بحث دلالي هجين (RAG)</h3>
+                <p>كل مستند يُحوَّل إلى معرفة مفهرسة بتضمينات BGE-M3 داخل قاعدة متجهات، فتسأل أرشيفك بالعربية وتحصل على إجابات من قلب مستنداتك.</p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card glass-panel">
+                <div class="icon-box orange-box"><i class="fa-solid fa-plug"></i></div>
+                <h3>خادم MCP لوكلاء الذكاء</h3>
+                <p>اربط Claude وغيره من الوكلاء بمعرفتك مباشرة عبر بروتوكول MCP بأدوات جاهزة: بحث دلالي (search)، إدخال مستندات (ingest)، واسترجاع الوثائق (get_document).</p>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="feature-card glass-panel">
+                <div class="icon-box pink-box"><i class="fa-solid fa-user-shield"></i></div>
+                <h3>خصوصية وكشف البيانات الحساسة</h3>
+                <p>معالجة محلية بالكامل، مع طبقة كشف للبيانات الشخصية (PII) نصياً وبصرياً وأدوات تدقيق دورية تضمن خلوّ قاعدة معرفتك من المعلومات الحساسة.</p>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="feature-card glass-panel">
+                <div class="icon-box cyan-box"><i class="fa-solid fa-building-shield"></i></div>
+                <h3>بنية مؤسسية جاهزة للتوسع</h3>
+                <p>واجهة FastAPI متعددة المستأجرين بمفاتيح API آمنة، ومعالجة غير متزامنة للمهام الثقيلة (Celery + Redis)، وخط أنابيب مرن يتعافى من الأخطاء تلقائياً.</p>
             </div>
         </div>
     </section>
 
-    <!-- Call To Action & Download -->
-    <section id="download" class="download-section">
+    <!-- Pipeline / How it works -->
+    <section id="pipeline" class="pipeline-section">
+        <h2 class="section-heading">من ملف فوضوي إلى <span class="gradient-text">معرفة حيّة</span></h2>
+        <div class="pipeline-steps">
+            <div class="pipeline-step glass-panel">
+                <span class="step-num">1</span>
+                <i class="fa-solid fa-file-arrow-up"></i>
+                <h4>الاستلام</h4>
+                <p>ارفع PDF أو صورة عبر الويب، الـ API، أو إضافة Obsidian.</p>
+            </div>
+            <div class="pipeline-arrow"><i class="fa-solid fa-angles-left"></i></div>
+            <div class="pipeline-step glass-panel">
+                <span class="step-num">2</span>
+                <i class="fa-solid fa-eye"></i>
+                <h4>الرؤية</h4>
+                <p>الموجّه البصري يختار النموذج الأنسب لقراءة المحتوى.</p>
+            </div>
+            <div class="pipeline-arrow"><i class="fa-solid fa-angles-left"></i></div>
+            <div class="pipeline-step glass-panel">
+                <span class="step-num">3</span>
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h4>الإصلاح</h4>
+                <p>هيكلة النص العربي وتنقيته وتحويله إلى ماركداون نظيف.</p>
+            </div>
+            <div class="pipeline-arrow"><i class="fa-solid fa-angles-left"></i></div>
+            <div class="pipeline-step glass-panel">
+                <span class="step-num">4</span>
+                <i class="fa-solid fa-diagram-project"></i>
+                <h4>الفهرسة</h4>
+                <p>تضمين دلالي وتخزين في قاعدة معرفة (Wiki) قابلة للبحث.</p>
+            </div>
+            <div class="pipeline-arrow"><i class="fa-solid fa-angles-left"></i></div>
+            <div class="pipeline-step glass-panel">
+                <span class="step-num">5</span>
+                <i class="fa-solid fa-comments"></i>
+                <h4>الاستثمار</h4>
+                <p>اسأل، ابحث، وادمج معرفتك مع وكلاء الذكاء الاصطناعي.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations / Ecosystem -->
+    <section id="integrations" class="integrations-section">
+        <h2 class="section-heading">منظومة متكاملة لكل <span class="gradient-text">سيناريو استخدام</span></h2>
+        <div class="integrations-grid">
+            <div class="integration-card glass-panel">
+                <i class="fa-solid fa-globe"></i>
+                <h4>واجهة الويب</h4>
+                <p>لوحة تحكم حديثة مبنية بـ Next.js لرفع الملفات ومتابعة المعالجة والبحث في معرفتك.</p>
+            </div>
+            <div class="integration-card glass-panel">
+                <i class="fa-solid fa-server"></i>
+                <h4>Madarek API</h4>
+                <p>واجهة برمجية REST مبنية بـ FastAPI مع مفاتيح وصول آمنة ومهام غير متزامنة لخدمة تطبيقاتك.</p>
+            </div>
+            <div class="integration-card glass-panel">
+                <i class="fa-solid fa-plug"></i>
+                <h4>خادم MCP</h4>
+                <p>وصّل وكلاء الذكاء الاصطناعي بمعرفتك عبر بروتوكول MCP (stdio / SSE) بثلاث أدوات جاهزة.</p>
+            </div>
+            <div class="integration-card glass-panel">
+                <i class="fa-solid fa-gem"></i>
+                <h4>إضافة Obsidian</h4>
+                <p>أدخل مستنداتك إلى قبو Obsidian مباشرة كملاحظات ماركداون منسقة عبر إضافة مخصصة.</p>
+            </div>
+            <div class="integration-card glass-panel">
+                <i class="fa-solid fa-brain"></i>
+                <h4>نموذج عربي مخصص</h4>
+                <p>نموذج لغوي مضبوط خصيصاً لإصلاح النصوص العربية (QLoRA) يعمل بسرعة عالية عبر vLLM.</p>
+            </div>
+            <div class="integration-card glass-panel">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h4>الوحدة التعليمية</h4>
+                <p>EduModule لتحويل المقررات والمستندات التعليمية إلى محتوى منظم قابل للاستذكار والبحث.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section id="start" class="download-section">
         <div class="glass-panel download-box">
-            <h2>ابدأ تحويل ملفاتك الآن بخصوصية تامة!</h2>
-            <p>لا داعي لرفع بياناتك الخاصة على خوادم السحابة. حمّل تطبيق مدارك المكتبي الصغير، واجعله يعمل كخلية نحل على جهازك مباشرةً دون لمس شبكة الإنترنت أبداً.</p>
-            <a href="#" class="btn primary-btn large-btn pulse-glow">
-                <i class="fa-solid fa-cloud-arrow-down"></i> تحميل أداة مدارك مجاناً
+            <h2>ابنِ قاعدة معرفتك العربية اليوم — بخصوصية تامة!</h2>
+            <p>منصة "مدارك 2.0" تعمل بالكامل على بنيتك الخاصة (FastAPI + Next.js + Ollama)، فلا تغادر مستنداتك جهازك أو خوادمك أبداً. النسخة السحابية (Madarek Cloud) بمساحات عمل وحسابات مؤسسية قادمة ضمن خارطة الطريق.</p>
+            <a href="#contact" class="btn primary-btn large-btn pulse-glow">
+                <i class="fa-solid fa-rocket"></i> اطلب الوصول المبكر
             </a>
-            <p class="version-info">الإصدار: 1.0 التجريبي | التوافق: ويندوز 10 وفوق</p>
+            <p class="version-info">الإصدار: 2.0.0 | البنية: FastAPI + Next.js + Ollama | جميع المراحل التطويرية (0–11) مكتملة ✅</p>
         </div>
     </section>
 
@@ -106,7 +218,7 @@
         <div class="contact-container">
             <div class="contact-info">
                 <h2>تواصل مع المطور</h2>
-                <p>نعمل بشغف في تطوير "مدارك" لتكون الأداة الأولى عربياً في هيكلة البيانات. يسعدنا جداً استقبال الدعم، الاقتراحات، والتبليغ عن الأعطال لرفع جودة المحرك.</p>
+                <p>نعمل بشغف في تطوير "مدارك" ليكون المنصة الأولى عربياً في فهم المستندات وهيكلة المعرفة. يسعدنا استقبال طلبات الوصول المبكر، الاقتراحات، والتبليغ عن الأعطال لرفع جودة المحرك.</p>
                 <div class="dev-card">
                     <img src="https://ui-avatars.com/api/?name=Ali+Assiri&background=3b82f6&color=fff&size=80" alt="Ali Assiri" class="dev-avatar">
                     <div class="dev-details">
@@ -115,9 +227,9 @@
                     </div>
                 </div>
             </div>
-            
+
             <form class="contact-form glass-panel" onsubmit="event.preventDefault(); alert('شكراً لرسالتك! سيتم ربطها بريدياً في التحديث القادم.');">
-                <h3>أرسل ملاحظاتك</h3>
+                <h3>أرسل ملاحظاتك أو اطلب الوصول المبكر</h3>
                 <div class="form-group">
                     <input type="text" placeholder="الاسم الكريم" required>
                 </div>
@@ -137,7 +249,9 @@
         <div class="footer-content">
             <p>جميع حقوق الخوارزميات وصيانة التراكيب العربية في محرك مدارك محفوظة للأساس المطور © 2026</p>
             <p style="font-size: 0.8rem; margin-top: 8px; color: #64748b; line-height: 1.5; max-width: 600px; margin-left: auto; margin-right: auto;">
-                <strong>إقرار التراخيص المفتوحة:</strong> يستخدم هذا التطبيق نواة الاستخراج الأساسية (MarkItDown) المطورة والمملوكة لشركة مايكروسوفت بموجب رخصة برمجيات (MIT License) الحرة للإطارات المفتوحة المضمنة.
+                <strong>إقرار التراخيص المفتوحة:</strong> تُبنى منصة مدارك فوق منظومة مفتوحة المصدر تشمل
+                FastAPI و Next.js و Ollama ونماذج التضمين BGE-M3، بموجب تراخيصها الحرة (MIT وما يماثلها)
+                للإطارات المفتوحة المضمنة.
             </p>
         </div>
     </footer>
