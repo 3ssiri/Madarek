@@ -34,7 +34,7 @@
     --surface: #ffffff;
     --ink: #16242e;
     --ink-soft: #586674;
-    --ink-faint: #7b8995;
+    --ink-faint: #66737f;
     --line: #dfe6ec;
     --primary: #0f766e;
     --primary-700: #0b5e57;
@@ -194,7 +194,7 @@ html[lang="en"] .brand-name { font-family: var(--font-en); font-size: 1.28rem; f
 .doc-text.broken { color: var(--error); opacity: 0.72; text-decoration: underline wavy rgba(169, 62, 50, 0.4) 1px; text-underline-offset: 7px; }
 .doc-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-block-start: 16px; }
 .doc-tags span { padding: 3px 12px; border-radius: 999px; background: var(--primary-50); color: var(--primary-700); font-size: 0.71rem; font-weight: 700; }
-.doc-stamp { position: absolute; inset-block-start: 16px; inset-inline-end: 20px; padding: 3px 12px; border: 1.5px solid var(--accent-soft); border-radius: 8px; background: var(--accent-50); color: var(--accent); font-family: var(--font-ar); font-size: 0.8rem; font-weight: 700; transform: rotate(5deg); }
+.doc-stamp { position: absolute; inset-block-start: -13px; inset-inline-end: 20px; z-index: 1; padding: 3px 12px; border: 1.5px solid var(--accent-soft); border-radius: 8px; background: var(--accent-50); color: var(--accent); font-family: var(--font-ar); font-size: 0.8rem; font-weight: 700; transform: rotate(5deg); box-shadow: 0 5px 14px -10px rgba(22, 36, 46, 0.45); }
 html[lang="en"] .doc-stamp { font-family: var(--font-en); }
 .specimen-divider { display: flex; align-items: center; gap: 13px; }
 .divider-line { flex: 1; height: 1px; background: var(--line); }
