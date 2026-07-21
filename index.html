@@ -3,21 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مدارك — منصّة عربية لفهم المستندات وتحويلها إلى معرفة</title>
-    <meta name="description" content="مدارك يقرأ مستنداتك العربية الممسوحة، يُصلح تشوّهات الحرف العربي، ويحوّل أرشيفك إلى مكتبة معرفية تُسأل بلغتك — بخصوصية تامّة داخل بيئتك.">
-    <meta property="og:title" content="مدارك — حيث يستعيد النصّ العربي هيئته">
-    <meta property="og:description" content="منصّة عربية لفهم المستندات: قراءة بصرية، إصلاح للنص، وبحث دلالي بالمعنى.">
+    <meta name="description" content="مدارك منصة عربية لفهم المستندات: قراءة بصرية، تقويم للنص العربي، فهرسة دلالية، وإجابات موثقة بالمصادر مع خيارات نشر خاصة وسحابية.">
     <meta name="theme-color" content="#0f766e">
+    <meta name="color-scheme" content="light">
+    <meta name="robots" content="index, follow">
+
+    <title>مدارك — منصة عربية لفهم المستندات وتحويلها إلى معرفة</title>
+    <link rel="canonical" href="https://3ssiri.github.io/Madarek/">
+    <link rel="alternate" hreflang="ar" href="https://3ssiri.github.io/Madarek/">
+    <link rel="alternate" hreflang="en" href="https://3ssiri.github.io/Madarek/en/">
+    <link rel="alternate" hreflang="x-default" href="https://3ssiri.github.io/Madarek/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_SA">
+    <meta property="og:site_name" content="مدارك">
+    <meta property="og:url" content="https://3ssiri.github.io/Madarek/">
+    <meta property="og:title" content="مدارك — منصة عربية لفهم المستندات">
+    <meta property="og:description" content="قراءة بصرية، تقويم للنص العربي، بحث دلالي، وإجابات موثقة من داخل مستنداتك.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="مدارك — منصة عربية لفهم المستندات">
+    <meta name="twitter:description" content="حوّل المستندات العربية الممسوحة إلى معرفة قابلة للبحث والاسترجاع والتكامل.">
+
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Cpath d='M32 13 51 32 32 51 13 32Z' fill='%23ffffff'/%3E%3Cpath d='M32 24 40 32 32 40 24 32Z' fill='%230f766e'/%3E%3C/svg%3E">
     <link rel="preload" href="fonts/ThmanyahSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/ThmanyahSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-
     <a class="skip-link" href="#main">تجاوز إلى المحتوى</a>
 
-    <!-- ـــــــــ Header ـــــــــ -->
     <header class="site-header">
         <div class="container header-inner">
             <a href="#top" class="brand" aria-label="مدارك — الصفحة الرئيسية">
@@ -27,43 +42,42 @@
                 </svg>
                 <span class="brand-name">مدارك</span>
             </a>
+
             <nav class="site-nav" aria-label="التنقل الرئيسي">
                 <a href="#capabilities">القدرات</a>
                 <a href="#method">كيف يعمل</a>
-                <a href="#ecosystem">المنظومة</a>
+                <a href="#deployment">النشر والخصوصية</a>
                 <a href="#contact">تواصل</a>
             </nav>
-            <a href="#contact" class="btn btn-ink header-cta">اطلب وصولاً مبكراً</a>
+
+            <div class="header-actions">
+                <a class="language-link" href="en/" lang="en" dir="ltr" aria-label="View the English version">EN</a>
+                <a href="#contact" class="btn btn-ink header-cta">اطلب وصولًا مبكرًا</a>
+            </div>
         </div>
     </header>
 
     <main id="main">
-
-        <!-- ـــــــــ Hero ـــــــــ -->
         <section id="top" class="hero">
             <div class="container hero-grid">
                 <div class="hero-copy reveal">
-                    <p class="kicker">منصّة عربية لفهم المستندات</p>
-                    <h1 class="display">
-                        نُعيد للنصّ العربي هيئته،<br>
-                        <em>ونحوّله إلى معرفةٍ حيّة.</em>
-                    </h1>
+                    <p class="kicker">منصة عربية لفهم المستندات</p>
+                    <h1 class="display">نُعيد للنص العربي هيئته،<br><em>ونحوّله إلى معرفة موثقة.</em></h1>
                     <p class="lede">
-                        يقرأ «مدارك» ملفات PDF والصور الممسوحة بعينٍ مدرَّبة على العربية،
-                        يُقوِّم ما أصاب الحرف من تقطيعٍ وانعكاس، ثم يبني من مستنداتك
-                        مكتبةً تُسأل بالمعنى فتُجيب من قلب صفحاتك — دون أن تغادر
-                        بياناتك بيئتك الخاصّة.
+                        يقرأ «مدارك» ملفات PDF والصور الممسوحة، يعالج تشوهات الاستخراج العربي،
+                        ثم يبني قاعدة معرفة تُسأل بالمعنى وتُجيب من داخل الصفحات مع إسناد واضح للمصدر.
                     </p>
                     <div class="hero-actions">
-                        <a href="#contact" class="btn btn-ink">اطلب وصولاً مبكراً</a>
+                        <a href="#contact" class="btn btn-ink">اطلب وصولًا مبكرًا</a>
                         <a href="#capabilities" class="btn-line">تعرّف على القدرات</a>
                     </div>
+                    <p class="hero-note">إصدار تجريبي قيد التطوير · الرياض، المملكة العربية السعودية</p>
                 </div>
 
-                <!-- Before / after specimen — the product in one glance -->
-                <figure class="specimen reveal" aria-label="عينة: نص قبل المعالجة وبعدها">
+                <figure class="specimen reveal" aria-labelledby="specimen-caption">
+                    <figcaption id="specimen-caption" class="sr-only">مثال توضيحي للنص قبل المعالجة وبعدها</figcaption>
                     <div class="doc doc-before">
-                        <div class="doc-bar"><span>النصّ كما يصل</span><span class="doc-flag">مُشوَّه</span></div>
+                        <div class="doc-bar"><span>النص كما يصل</span><span class="doc-flag">مشوّه</span></div>
                         <p class="doc-text broken" aria-hidden="true">ًايئوض حوسمم فلم نم صَّنلا اذه جرُختسا</p>
                         <p class="doc-text broken" aria-hidden="true">ةسوكعم فورحلاو ،ةرثعبم تاملكلا ودبتف</p>
                     </div>
@@ -74,212 +88,231 @@
                     </div>
                     <div class="doc doc-after">
                         <span class="doc-stamp" aria-hidden="true">مُقوَّم</span>
-                        <div class="doc-bar"><span>النصّ بعد مدارك</span><span class="doc-flag ok">سليم</span></div>
-                        <p class="doc-text">استُخرج هذا النصّ من ملفٍ ممسوحٍ ضوئياً</p>
+                        <div class="doc-bar"><span>النص بعد مدارك</span><span class="doc-flag ok">سليم</span></div>
+                        <p class="doc-text">استُخرج هذا النص من ملف ممسوح ضوئيًا</p>
                         <p class="doc-text">فتعود الكلمات إلى نسقها، والحروف إلى وصلها</p>
-                        <div class="doc-tags">
-                            <span>عنوان</span><span>فقرة</span><span>جدول</span>
+                        <div class="doc-tags" aria-label="أنواع العناصر المستخرجة">
+                            <span>عنوان</span><span>فقرة</span><span>جدول</span><span>مصدر</span>
                         </div>
                     </div>
                 </figure>
             </div>
         </section>
 
-        <!-- ـــــــــ Credo strip ـــــــــ -->
-        <div class="credo" role="presentation">
+        <div class="credo" aria-label="مزايا أساسية">
             <div class="container credo-items">
-                <span>معالجة داخل بيئتك بالكامل</span>
-                <span>إصلاح تشوّهات الحرف العربي</span>
-                <span>بحثٌ بالمعنى لا بالكلمات</span>
-                <span>تكامل برمجي مفتوح</span>
-                <span>تدقيق للبيانات الحسّاسة</span>
+                <span>عربي أولًا</span>
+                <span>إجابات مسندة إلى الصفحات</span>
+                <span>بحث بالمعنى لا بالكلمات</span>
+                <span>واجهات تكامل مفتوحة</span>
+                <span>خيارات نشر مرنة</span>
             </div>
         </div>
 
-        <!-- ـــــــــ Capabilities ـــــــــ -->
         <section id="capabilities" class="section">
             <div class="container">
                 <header class="section-head reveal">
                     <span class="section-no">٠١</span>
                     <h2 class="display">القدرات</h2>
-                    <p>ستّ ركائز يقوم عليها المحرّك، من أوّل صفحة ممسوحة إلى آخر سؤال تطرحه.</p>
+                    <p>خط معالجة عربي متكامل، من أول صفحة ممسوحة إلى إجابة قابلة للتحقق.</p>
                 </header>
 
                 <div class="cap-grid">
                     <article class="cap reveal">
                         <span class="cap-no">٠١</span>
-                        <h3>قراءة بصرية مدرَّبة على العربية</h3>
-                        <p>يقرأ الصفحات الممسوحة والصور منخفضة الجودة بتقنيات رؤية حاسوبية تعمل محلياً، فلا تُرسل صفحة واحدة خارج بيئتك.</p>
+                        <h3>قراءة بصرية للعربية</h3>
+                        <p>استخراج النص من ملفات PDF والصور الممسوحة مع التعامل مع تفاوت الجودة وتخطيط الصفحة.</p>
                     </article>
                     <article class="cap reveal">
                         <span class="cap-no">٠٢</span>
-                        <h3>تقويم الحرف العربي</h3>
-                        <p>يعالج الحروف المقطّعة والمنعكسة والكلمات المبعثرة التي يخلّفها سوء الاستخراج، ليخرج النصّ سليماً كما كُتب أوّل مرّة.</p>
+                        <h3>تقويم النص وهيكلته</h3>
+                        <p>معالجة الحروف المقطعة والمنعكسة والكلمات المبعثرة، ثم استعادة العناوين والفقرات والجداول.</p>
                     </article>
                     <article class="cap reveal">
                         <span class="cap-no">٠٣</span>
-                        <h3>بحثٌ دلاليّ بالمعنى</h3>
-                        <p>يتحوّل كلّ مستند إلى معرفة مفهرسة تُسأل بالمعنى لا بمطابقة الكلمات، فتجد ضالّتك وإن اختلفت الصياغة.</p>
+                        <h3>بحث دلالي وهجين</h3>
+                        <p>استرجاع المعلومة بالمعنى مع دعم البحث النصي وإعادة الترتيب لرفع دقة النتائج.</p>
                     </article>
                     <article class="cap reveal">
                         <span class="cap-no">٠٤</span>
-                        <h3>جاهزٌ لمساعدات الذكاء الاصطناعي</h3>
-                        <p>يتكامل مع وكلاء الذكاء الاصطناعي عبر بروتوكولات قياسية مفتوحة، فتغدو مكتبتك مرجعاً يستند إليه مساعدك الرقمي.</p>
+                        <h3>إجابات موثقة</h3>
+                        <p>إجابات مرتبطة بالمستند والصفحة والمقطع المستخدم، لتقليل الادعاءات غير المدعومة.</p>
                     </article>
                     <article class="cap reveal">
                         <span class="cap-no">٠٥</span>
                         <h3>خصوصية بالتصميم</h3>
-                        <p>المعالجة كلّها تجري داخل بنيتك، تسندها طبقة تدقيق تكشف البيانات الحسّاسة قبل أن تستقرّ في قاعدة معرفتك.</p>
+                        <p>خيارات نشر داخل بيئة العميل أو في سحابة خاصة ومعزولة، وفق حساسية البيانات ومتطلبات الجهة.</p>
                     </article>
                     <article class="cap reveal">
                         <span class="cap-no">٠٦</span>
-                        <h3>أتمتة وتصدير بلا حدود</h3>
-                        <p>واجهة برمجية لربط أنظمتك ومعالجة الملفات على نطاق واسع، وصيغ إخراج نظيفة جاهزة للنشر والأرشفة وإعادة الاستخدام.</p>
+                        <h3>تكامل وأتمتة</h3>
+                        <p>واجهة API وربط مع أدوات المعرفة والوكلاء لمعالجة الملفات على دفعات وتصدير نتائج منظمة.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- ـــــــــ Method ـــــــــ -->
         <section id="method" class="section section-alt">
             <div class="container">
                 <header class="section-head reveal">
                     <span class="section-no">٠٢</span>
                     <h2 class="display">كيف يعمل</h2>
-                    <p>رحلة المستند من ملفٍ مبعثر إلى معرفةٍ تُجيب، في خمس محطّات.</p>
+                    <p>رحلة المستند من ملف خام إلى معرفة يمكن البحث فيها والاستناد إليها.</p>
                 </header>
 
                 <ol class="steps">
                     <li class="step reveal">
                         <span class="step-no">١</span>
                         <h3>الاستلام</h3>
-                        <p>يصل المستند عبر الويب أو الواجهة البرمجية أو أدوات التدوين.</p>
+                        <p>رفع ملف أو تمريره عبر الواجهة البرمجية ضمن مساحة عمل معزولة.</p>
                     </li>
                     <li class="step reveal">
                         <span class="step-no">٢</span>
                         <h3>القراءة</h3>
-                        <p>عينٌ بصرية تختار الأسلوب الأنسب لفكّ محتوى كلّ صفحة.</p>
+                        <p>اختيار مسار الاستخراج المناسب لكل صفحة وفق نوعها وجودتها.</p>
                     </li>
                     <li class="step reveal">
                         <span class="step-no">٣</span>
                         <h3>التقويم</h3>
-                        <p>يُصلَح النصّ ويُهيكل ويتحوّل إلى صياغة نظيفة منسّقة.</p>
+                        <p>تنظيف النص وإصلاح اتجاهه وبنيته واستخراج عناصره.</p>
                     </li>
                     <li class="step reveal">
                         <span class="step-no">٤</span>
                         <h3>الفهرسة</h3>
-                        <p>تُفهرس المعاني وتستقرّ في قاعدة معرفة قابلة للبحث.</p>
+                        <p>تقسيم المحتوى وتوليد تمثيلات دلالية وفهرس قابل للاسترجاع.</p>
                     </li>
                     <li class="step reveal">
                         <span class="step-no">٥</span>
-                        <h3>الاستثمار</h3>
-                        <p>تسأل، تبحث، وتربط معرفتك بأدواتك ومساعداتك الذكية.</p>
+                        <h3>الاستخدام</h3>
+                        <p>بحث، سؤال، تصدير، أو ربط المعرفة بمساعدات ووكلاء ذكية.</p>
                     </li>
                 </ol>
             </div>
         </section>
 
-        <!-- ـــــــــ Ecosystem ـــــــــ -->
-        <section id="ecosystem" class="section">
-            <div class="container">
+        <section id="deployment" class="section">
+            <div class="container deployment-grid">
                 <header class="section-head reveal">
                     <span class="section-no">٠٣</span>
-                    <h2 class="display">المنظومة</h2>
-                    <p>مدخلٌ لكلّ سيناريو: للقارئ الفرد، وللباحث، وللمؤسسة، وللمطوّر.</p>
+                    <h2 class="display">نشر يناسب حساسية بياناتك</h2>
+                    <p>لا نفرض نموذج تشغيل واحدًا. تُختار البنية حسب متطلبات الأمن والسيادة والتوسع.</p>
                 </header>
 
-                <div class="eco-grid reveal">
-                    <div class="eco-cell">
-                        <h3>واجهة الويب</h3>
-                        <p>لوحة عمل حديثة لرفع الملفات ومتابعة المعالجة والبحث في معرفتك.</p>
-                    </div>
-                    <div class="eco-cell">
-                        <h3>الواجهة البرمجية</h3>
-                        <p>‏API آمنة بمفاتيح وصول، تعالج دفعات كبيرة دون انتظار.</p>
-                    </div>
-                    <div class="eco-cell">
-                        <h3>وكلاء الذكاء الاصطناعي</h3>
-                        <p>اتصال مباشر بمساعدات الذكاء عبر بروتوكولات مفتوحة قياسية.</p>
-                    </div>
-                    <div class="eco-cell">
-                        <h3>إضافة Obsidian</h3>
-                        <p>مستنداتك تدخل قبو ملاحظاتك مباشرةً كصفحات منسّقة مترابطة.</p>
-                    </div>
-                    <div class="eco-cell">
-                        <h3>محرّك عربيّ متخصّص</h3>
-                        <p>نواة لغوية بُنيت خصيصاً لفهم العربية وعلاج عللها لا كترجمة لحلّ أجنبي.</p>
-                    </div>
-                    <div class="eco-cell">
-                        <h3>نشرٌ مؤسسيّ وحكوميّ</h3>
-                        <p>تركيبٌ داخل البنية التحتية للشركات والجهات الحكومية، بصلاحيات وأدوار وتدقيق وصول.</p>
-                    </div>
+                <div class="deployment-options">
+                    <article class="deployment-card reveal">
+                        <span class="status-badge">خصوصية قصوى</span>
+                        <h3>داخل بيئة العميل</h3>
+                        <p>للجهات التي تتطلب بقاء المستندات والمعالجة داخل بنيتها التحتية.</p>
+                    </article>
+                    <article class="deployment-card reveal">
+                        <span class="status-badge">مرونة وتوسع</span>
+                        <h3>سحابة خاصة أو إقليمية</h3>
+                        <p>تشغيل معزول مع ضوابط وصول وتشفير ومراقبة، وفق المنطقة والخدمات المتاحة.</p>
+                    </article>
+                    <article class="deployment-card reveal">
+                        <span class="status-badge">تكامل مؤسسي</span>
+                        <h3>واجهة API ووكلاء</h3>
+                        <p>دمج قدرات مدارك داخل الأنظمة الحالية وأدوات المعرفة ومزوّدي النماذج.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- ـــــــــ CTA band ـــــــــ -->
-        <section class="cta-band">
-            <div class="container cta-inner reveal">
-                <h2 class="display">مكتبتك تستحقّ أن تُفهَم.</h2>
-                <p>ابدأ ببناء قاعدة معرفتك العربية اليوم — تعمل المنصّة داخل بيئتك الخاصّة، ولا تغادر مستنداتك حدودها.</p>
-                <a href="#contact" class="btn btn-paper">اطلب الوصول المبكر</a>
-                <p class="cta-note">الإصدار الثاني · وصول مبكر</p>
+        <section id="ecosystem" class="section section-alt">
+            <div class="container">
+                <header class="section-head reveal">
+                    <span class="section-no">٠٤</span>
+                    <h2 class="display">المنظومة</h2>
+                    <p>واجهات متعددة للباحث والمطور والمؤسسة، مبنية حول محرّك واحد.</p>
+                </header>
+
+                <div class="eco-grid">
+                    <article class="eco-cell reveal">
+                        <h3>واجهة الويب</h3>
+                        <p>رفع الملفات، متابعة المعالجة، البحث، ومراجعة المصادر من مساحة عمل واحدة.</p>
+                    </article>
+                    <article class="eco-cell reveal">
+                        <h3>الواجهة البرمجية</h3>
+                        <p>API آمنة لمعالجة الدفعات ودمج الاستخراج والفهرسة داخل المنتجات.</p>
+                    </article>
+                    <article class="eco-cell reveal">
+                        <h3>وكلاء الذكاء الاصطناعي</h3>
+                        <p>إتاحة المعرفة للوكلاء عبر بروتوكولات وأدوات تكامل قياسية.</p>
+                    </article>
+                    <article class="eco-cell reveal">
+                        <h3>إضافة Obsidian</h3>
+                        <p>تحويل المستندات إلى صفحات منظمة ومترابطة داخل قاعدة الملاحظات.</p>
+                    </article>
+                    <article class="eco-cell reveal">
+                        <h3>محرّك عربي متخصص</h3>
+                        <p>تطبيع وتقسيم وتقييم مصمم لمشكلات الوثائق العربية لا كترجمة لحل أجنبي.</p>
+                    </article>
+                    <article class="eco-cell reveal">
+                        <h3>توسع مؤسسي</h3>
+                        <p>صلاحيات وأدوار وسجلات تدقيق ومقاييس جودة وأداء قابلة للقياس.</p>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <!-- ـــــــــ Contact ـــــــــ -->
+        <section class="cta-band" aria-labelledby="cta-title">
+            <div class="container cta-inner reveal">
+                <h2 id="cta-title" class="display">مستنداتك تستحق أن تُفهَم.</h2>
+                <p>نبني مدارك ليحوّل المحتوى العربي غير المنظم إلى معرفة موثوقة وقابلة للتكامل.</p>
+                <a href="#contact" class="btn btn-paper">اطلب الوصول المبكر</a>
+                <p class="cta-note">نسخة تجريبية · نستقبل حالات الاستخدام والشراكات التقنية</p>
+            </div>
+        </section>
+
         <section id="contact" class="section">
             <div class="container contact-grid">
                 <div class="contact-copy reveal">
                     <header class="section-head">
-                        <span class="section-no">٠٤</span>
+                        <span class="section-no">٠٥</span>
                         <h2 class="display">تواصل</h2>
-                        <p>
-                            يُبنى «مدارك» ليكون المرجع العربي الأوّل في فهم المستندات
-                            وهيكلة المعرفة. يسعدنا استقبال طلبات الوصول المبكر،
-                            والاقتراحات، وملاحظات الاستخدام.
-                        </p>
+                        <p>للوصول المبكر، الشراكات التقنية، أو تجربة حالة استخدام على مستندات عربية.</p>
                     </header>
                     <div class="dev-card">
                         <span class="dev-monogram" aria-hidden="true">ع</span>
                         <div class="dev-details">
                             <h3>علي عسيري</h3>
-                            <p>المبرمج والمطوّر</p>
-                            <a href="mailto:assiri@gmail.com" class="dev-mail">assiri@gmail.com</a>
+                            <p>المؤسس ومطوّر المنتج · الرياض</p>
+                            <a href="mailto:assiri@gmail.com" class="dev-mail" dir="ltr">assiri@gmail.com</a>
+                            <a href="https://github.com/3ssiri/Madarek" class="dev-link" target="_blank" rel="noopener noreferrer">مستودع المشروع على GitHub</a>
                         </div>
                     </div>
                 </div>
 
-                <form class="contact-form reveal" onsubmit="event.preventDefault(); alert('وصلت رسالتك، شكراً لك. سنعود إليك قريباً.'); this.reset();">
-                    <h3>أرسل ملاحظتك أو اطلب الوصول المبكر</h3>
+                <form id="contact-form" class="contact-form reveal" novalidate>
+                    <h3>أرسل طلبك عبر البريد</h3>
+                    <p class="form-intro">سيُفتح تطبيق البريد على جهازك برسالة مجهزة، ولن تُرسل أي بيانات دون موافقتك.</p>
                     <div class="field">
-                        <label for="f-name">الاسم الكريم</label>
-                        <input id="f-name" type="text" name="name" autocomplete="name" required>
+                        <label for="f-name">الاسم</label>
+                        <input id="f-name" type="text" name="name" autocomplete="name" required maxlength="100">
                     </div>
                     <div class="field">
                         <label for="f-mail">البريد الإلكتروني</label>
-                        <input id="f-mail" type="email" name="email" autocomplete="email" required>
+                        <input id="f-mail" type="email" name="email" autocomplete="email" required maxlength="160" dir="ltr">
                     </div>
                     <div class="field">
-                        <label for="f-msg">رسالتك</label>
-                        <textarea id="f-msg" name="message" rows="4" required></textarea>
+                        <label for="f-msg">الرسالة</label>
+                        <textarea id="f-msg" name="message" rows="5" required maxlength="2000"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-ink btn-block">إرسال</button>
+                    <button type="submit" class="btn btn-ink btn-block">فتح رسالة البريد</button>
+                    <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
                 </form>
             </div>
         </section>
-
     </main>
 
-    <!-- ـــــــــ Footer ـــــــــ -->
     <footer class="site-footer">
         <div class="container footer-inner">
-            <p>© ٢٠٢٦ مدارك — جميع حقوق الخوارزميات وصيانة التراكيب العربية محفوظة.</p>
+            <p>© ٢٠٢٦ مدارك. جميع الحقوق محفوظة.</p>
+            <a href="en/" lang="en" dir="ltr">English version</a>
         </div>
     </footer>
 
     <script>
-        // Scroll-triggered reveal — disabled when the user prefers reduced motion
         (function () {
             var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
             var items = document.querySelectorAll('.reveal');
@@ -287,18 +320,17 @@
                 items.forEach(function (el) { el.classList.add('in-view'); });
                 return;
             }
-            var io = new IntersectionObserver(function (entries) {
+            var observer = new IntersectionObserver(function (entries) {
                 entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('in-view');
-                        io.unobserve(entry.target);
+                        observer.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.15 });
-            items.forEach(function (el) { io.observe(el); });
+            }, { threshold: 0.12 });
+            items.forEach(function (el) { observer.observe(el); });
         })();
 
-        // Hairline shadow under the header once the page scrolls
         (function () {
             var header = document.querySelector('.site-header');
             var onScroll = function () {
@@ -306,6 +338,31 @@
             };
             window.addEventListener('scroll', onScroll, { passive: true });
             onScroll();
+        })();
+
+        (function () {
+            var form = document.getElementById('contact-form');
+            var status = document.getElementById('form-status');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                status.textContent = '';
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    status.textContent = 'أكمل الحقول المطلوبة بصيغة صحيحة.';
+                    return;
+                }
+
+                var data = new FormData(form);
+                var name = String(data.get('name') || '').trim();
+                var email = String(data.get('email') || '').trim();
+                var message = String(data.get('message') || '').trim();
+                var subject = 'طلب تواصل عبر موقع مدارك — ' + name;
+                var body = 'الاسم: ' + name + '\nالبريد: ' + email + '\n\nالرسالة:\n' + message;
+                var mailto = 'mailto:assiri@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+                status.textContent = 'سيُفتح تطبيق البريد. راجع الرسالة ثم أرسلها من حسابك.';
+                window.location.href = mailto;
+            });
         })();
     </script>
 </body>
