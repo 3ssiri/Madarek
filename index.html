@@ -283,9 +283,16 @@
                     </div>
                 </div>
 
-                <form id="contact-form" class="contact-form reveal" novalidate>
-                    <h3>أرسل طلبك عبر البريد</h3>
-                    <p class="form-intro">سيُفتح تطبيق البريد على جهازك برسالة مجهزة، ولن تُرسل أي بيانات دون موافقتك.</p>
+                <form id="contact-form" class="contact-form reveal" action="https://formsubmit.co/assiri@gmail.com" method="POST">
+                    <h3>أرسل طلبك مباشرة</h3>
+                    <p class="form-intro">تُرسل الرسالة مباشرة من الموقع، وستظهر لك نتيجة الإرسال هنا.</p>
+                    <input type="hidden" name="_subject" value="طلب تواصل جديد عبر موقع مدارك">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div aria-hidden="true" style="position:absolute;inset-inline-start:-9999px;width:1px;height:1px;overflow:hidden;">
+                        <label for="f-honey">اترك هذا الحقل فارغًا</label>
+                        <input id="f-honey" type="text" name="_honey" tabindex="-1" autocomplete="off">
+                    </div>
                     <div class="field">
                         <label for="f-name">الاسم</label>
                         <input id="f-name" type="text" name="name" autocomplete="name" required maxlength="100">
@@ -298,7 +305,7 @@
                         <label for="f-msg">الرسالة</label>
                         <textarea id="f-msg" name="message" rows="5" required maxlength="2000"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-ink btn-block">فتح رسالة البريد</button>
+                    <button type="submit" class="btn btn-ink btn-block">إرسال الرسالة</button>
                     <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
                 </form>
             </div>
@@ -343,25 +350,48 @@
         (function () {
             var form = document.getElementById('contact-form');
             var status = document.getElementById('form-status');
-            form.addEventListener('submit', function (event) {
+            var button = form.querySelector('button[type="submit"]');
+            var defaultLabel = button.textContent;
+
+            form.addEventListener('submit', async function (event) {
                 event.preventDefault();
                 status.textContent = '';
+                status.className = 'form-status';
+
                 if (!form.checkValidity()) {
                     form.reportValidity();
                     status.textContent = 'أكمل الحقول المطلوبة بصيغة صحيحة.';
                     return;
                 }
 
-                var data = new FormData(form);
-                var name = String(data.get('name') || '').trim();
-                var email = String(data.get('email') || '').trim();
-                var message = String(data.get('message') || '').trim();
-                var subject = 'طلب تواصل عبر موقع مدارك — ' + name;
-                var body = 'الاسم: ' + name + '\nالبريد: ' + email + '\n\nالرسالة:\n' + message;
-                var mailto = 'mailto:assiri@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+                button.disabled = true;
+                button.textContent = 'جارٍ الإرسال...';
+                form.setAttribute('aria-busy', 'true');
 
-                status.textContent = 'سيُفتح تطبيق البريد. راجع الرسالة ثم أرسلها من حسابك.';
-                window.location.href = mailto;
+                try {
+                    var response = await fetch('https://formsubmit.co/ajax/assiri@gmail.com', {
+                        method: 'POST',
+                        headers: { 'Accept': 'application/json' },
+                        body: new FormData(form)
+                    });
+                    var result = await response.json().catch(function () { return {}; });
+                    var succeeded = response.ok && (result.success === true || result.success === 'true');
+
+                    if (!succeeded) {
+                        throw new Error(result.message || 'Submission failed');
+                    }
+
+                    form.reset();
+                    status.textContent = 'تم إرسال رسالتك بنجاح. شكرًا لتواصلك.';
+                    status.className = 'form-status is-success';
+                } catch (error) {
+                    status.textContent = 'تعذر إرسال الرسالة حاليًا. حاول مرة أخرى أو استخدم البريد الظاهر بجوار النموذج.';
+                    status.className = 'form-status is-error';
+                } finally {
+                    button.disabled = false;
+                    button.textContent = defaultLabel;
+                    form.removeAttribute('aria-busy');
+                }
             });
         })();
     </script>
