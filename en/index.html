@@ -190,6 +190,7 @@
                     <input type="hidden" name="_subject" value="New Madarek website inquiry">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_url" value="https://3ssiri.github.io/">
                     <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
                         <label for="f-honey">Leave this field empty</label>
                         <input id="f-honey" type="text" name="_honey" tabindex="-1" autocomplete="off">
@@ -272,7 +273,10 @@
                     status.textContent = 'Your message was sent successfully. Thank you.';
                     status.className = 'form-status is-success';
                 } catch (error) {
-                    status.textContent = 'The message could not be sent. Try again or use the email address shown next to the form.';
+                    var needsActivation = error instanceof Error && /activation/i.test(error.message);
+                    status.textContent = needsActivation
+                        ? 'The contact form setup is not complete yet. Try again later or use the email address shown next to the form.'
+                        : 'The message could not be sent. Try again or use the email address shown next to the form.';
                     status.className = 'form-status is-error';
                 } finally {
                     button.disabled = false;
