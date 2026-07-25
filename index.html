@@ -289,6 +289,7 @@
                     <input type="hidden" name="_subject" value="طلب تواصل جديد عبر موقع مدارك">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_url" value="https://3ssiri.github.io/">
                     <div aria-hidden="true" style="position:absolute;inset-inline-start:-9999px;width:1px;height:1px;overflow:hidden;">
                         <label for="f-honey">اترك هذا الحقل فارغًا</label>
                         <input id="f-honey" type="text" name="_honey" tabindex="-1" autocomplete="off">
@@ -385,7 +386,10 @@
                     status.textContent = 'تم إرسال رسالتك بنجاح. شكرًا لتواصلك.';
                     status.className = 'form-status is-success';
                 } catch (error) {
-                    status.textContent = 'تعذر إرسال الرسالة حاليًا. حاول مرة أخرى أو استخدم البريد الظاهر بجوار النموذج.';
+                    var needsActivation = error instanceof Error && /activation/i.test(error.message);
+                    status.textContent = needsActivation
+                        ? 'إعداد نموذج التواصل غير مكتمل بعد. حاول لاحقًا أو استخدم البريد الظاهر بجوار النموذج.'
+                        : 'تعذر إرسال الرسالة حاليًا. حاول مرة أخرى أو استخدم البريد الظاهر بجوار النموذج.';
                     status.className = 'form-status is-error';
                 } finally {
                     button.disabled = false;
